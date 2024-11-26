@@ -12,7 +12,7 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task1.V8.Test
             double value = 0.25;
             int startValue = 1;
             int stopValue = 7;
-            double res = ds.GetMultiplySeries(value, startValue, stopValue);
+            double res = ds.GetSumSeries(value, startValue, stopValue);
             double expected = 0.021;
             Assert.AreEqual(expected, res);
         }
