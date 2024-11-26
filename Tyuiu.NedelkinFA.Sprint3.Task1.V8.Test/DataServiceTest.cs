@@ -1,4 +1,5 @@
 using Tyuiu.NedelkinFA.Sprint3.Task1.V8.Lib;
+
 namespace Tyuiu.NedelkinFA.Sprint3.Task1.V8.Test
 {
     [TestClass]
@@ -8,12 +9,12 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task1.V8.Test
         public void ValidGetMultiplySeries()
         {
             DataService ds = new DataService();
-            double value = 5;
+            double value = 0.25;
             int startValue = 1;
-            int stopValue = 10;
+            int stopValue = 7;
             double res = ds.GetMultiplySeries(value, startValue, stopValue);
-            double wait = 8687915.945;
-            Assert.AreEqual(wait, res);
+            double expected = 0.021;
+            Assert.AreEqual(expected, res);
         }
     }
 }
