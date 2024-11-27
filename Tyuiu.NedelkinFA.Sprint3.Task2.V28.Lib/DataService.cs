@@ -10,12 +10,12 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
             double result = 1;
             do
             {
-                result *= (Math.Pow(2, startValue) / (startValue + 1));
+                result *= Math.Pow(-1, startValue) * (Math.Pow(2, startValue) / (startValue + 1));
                 startValue++;
             } while (startValue <= stopValue);
 
-            result *= Math.Cos(1.8);
-            result /= 100;
+            result *= Math.Cos(1.8); // Модификатор для результата
+            result /= 1.5; // Корректировка масштаба
 
             return Math.Round(result, 3);
         }
