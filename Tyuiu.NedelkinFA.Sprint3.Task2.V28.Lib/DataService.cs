@@ -14,7 +14,9 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
                 startValue++;
             } while (startValue <= stopValue);
             result *= Math.Cos(1.8);
-            return Math.Round(result, 3); 
+            result = result * -1.0;
+
+            return Math.Round(result, 3);
         }
     }
 }
