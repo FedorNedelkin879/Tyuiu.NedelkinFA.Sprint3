@@ -4,6 +4,10 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task1.V8.Lib
 {
     public class DataService : ISprint3Task1V8
     {
+        public string GetMultiplySeries(double value, int startValue, int stopValue)
+        {
+            throw new NotImplementedException();
+        }
 
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
