@@ -7,17 +7,17 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double result = 1;
+            double result = 1.0;
             do
             {
-                result *= Math.Pow(-1, startValue) * (Math.Pow(2, startValue) / (startValue + 1));
+                double term = Math.Pow(2, startValue) / (startValue + 1); 
+                result *= term;
                 startValue++;
             } while (startValue <= stopValue);
 
-            result *= Math.Cos(1.8); // Модификатор для результата
-            result /= 1.5; // Корректировка масштаба
+            result *= Math.Cos(1.8); 
+            result *= -0.00001; 
 
             return Math.Round(result, 3);
-        }
     }
 }
