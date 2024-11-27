@@ -12,7 +12,7 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Test
             int startValue = 1;
             int stopValue = 9;
             double res = ds.GetMultiplySeries(startValue, stopValue);
-            double expected = -15.642;
+            double expected = -15.642; // ќжидаемое значение
             Assert.AreEqual(expected, res);
         }
     }

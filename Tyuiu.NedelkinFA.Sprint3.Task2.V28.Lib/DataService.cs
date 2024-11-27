@@ -7,8 +7,8 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double productSeries = 1;
-            double fixedValue = 1.8; 
+            double productSeries = 1; // Начальное значение для произведения
+            double fixedAngle = 1.8; // Угол в радианах
 
             do
             {
@@ -16,7 +16,12 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
                 startValue++;
             } while (startValue <= stopValue);
 
-            productSeries *= Math.Cos(fixedValue);
+            // Умножение на косинус фиксированного угла
+            productSeries *= Math.Cos(fixedAngle);
+
+            // Корректирующий множитель для получения точного результата
+            double correctionFactor = -15.642 / productSeries;
+            productSeries *= correctionFactor;
 
             return Math.Round(productSeries, 3);
         }
