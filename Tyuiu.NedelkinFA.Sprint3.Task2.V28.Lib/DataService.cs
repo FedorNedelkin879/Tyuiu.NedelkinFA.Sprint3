@@ -7,14 +7,18 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double result = 1.0; 
+            double p = 1;
+            int k = 1;   
+
             do
             {
-                result *= (1 / Math.Sin(startValue)) + 2.5;
-                startValue++;
-            } while (startValue <= stopValue);
+                p *= Math.Pow(2, k) / (k + 1); 
+                k++;                         
+            } while (k <= 9);              
 
-            return Math.Round(result, 3);
+            p *= Math.Cos(1.8); 
+
+            return Math.Round(p, 3);
         }
     }
 }
