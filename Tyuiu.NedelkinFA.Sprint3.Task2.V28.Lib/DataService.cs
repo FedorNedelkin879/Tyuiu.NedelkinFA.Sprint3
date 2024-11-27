@@ -8,15 +8,16 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
         public double GetMultiplySeries(int startValue, int stopValue)
         {
             double result = 1.0;
+
             do
             {
-                double term = Math.Pow(2, startValue) / (startValue + 1);
-                result *= term;
+                double term = (2.0 * startValue) / (startValue + 1.0);
+                result *= term; 
                 startValue++;
             } while (startValue <= stopValue);
 
-            result *= Math.Cos(1.8);
-            result *= -0.00001;
+            result *= -0.001; 
+            result *= Math.Cos(1.8); 
 
             return Math.Round(result, 3);
         }
