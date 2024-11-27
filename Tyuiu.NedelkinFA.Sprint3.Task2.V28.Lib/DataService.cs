@@ -10,14 +10,15 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
             double result = 1.0;
             do
             {
-                double term = Math.Pow(2, startValue) / (startValue + 1); 
+                double term = Math.Pow(2, startValue) / (startValue + 1);
                 result *= term;
                 startValue++;
             } while (startValue <= stopValue);
 
-            result *= Math.Cos(1.8); 
-            result *= -0.00001; 
+            result *= Math.Cos(1.8);
+            result *= -0.00001;
 
             return Math.Round(result, 3);
+        }
     }
 }
