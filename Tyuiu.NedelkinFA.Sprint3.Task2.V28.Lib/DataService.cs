@@ -1,4 +1,5 @@
-﻿namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
+﻿using tyuiu.cources.programming.interfaces.Sprint3;
+namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
 {
     public class DataService
     {
