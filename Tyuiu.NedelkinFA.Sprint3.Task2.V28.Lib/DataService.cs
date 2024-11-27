@@ -9,7 +9,6 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
         {
             double p = 1;
             int k = 1;   
-
             do
             {
                 p *= Math.Pow(2, k) / (k + 1); 
