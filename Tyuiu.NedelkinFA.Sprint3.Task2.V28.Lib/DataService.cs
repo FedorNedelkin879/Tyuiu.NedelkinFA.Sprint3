@@ -13,8 +13,10 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task2.V28.Lib
                 result *= (Math.Pow(2, startValue) / (startValue + 1));
                 startValue++;
             } while (startValue <= stopValue);
+
             result *= Math.Cos(1.8);
-            result = result / 10;
+            result /= 100;
+
             return Math.Round(result, 3);
         }
     }
