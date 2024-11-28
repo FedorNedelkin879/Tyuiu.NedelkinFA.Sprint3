@@ -15,12 +15,11 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task5.V14.Test
             int startValue2 = 1;
             int stopValue2 = 14;
             double res = ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2);
-            double wait = -31.275
+            double wait = -31.275;
             Assert.AreEqual(wait, res);
         }
 
 
     }
 
-}
 }
