@@ -7,11 +7,12 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task5.V14.Lib
         public double GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
         {
             double sumSeries = 0;
-            for (int i = startValue1; i <= stopValue1; i++) 
+            int i, j;
+            for (i = startValue1; i <= stopValue1; i++)
             {
-                for (int k = startValue2; k <= stopValue2; k++) 
+                for (j = startValue2; j <= stopValue2; j++)
                 {
-                    sumSeries += Math.Sin(k) + (2.0 / k); 
+                    sumSeries = sumSeries + ((1 / Math.Sin(j)) + x);
                 }
             }
             return Math.Round(sumSeries, 3);
