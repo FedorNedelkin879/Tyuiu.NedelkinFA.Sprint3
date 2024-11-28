@@ -12,7 +12,7 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task6.V10.Lib
             {
                 for (int d = 1; d <= x; d++)
                 {
-                    if (x % d == 0)
+                    if (x % d == 0 && d > 12)
                     {
                         sum += d;
                     }
