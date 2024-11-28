@@ -12,7 +12,7 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task5.V14.Lib
             {
                 for (j = startValue2; j <= stopValue2; j++)  // Внутренний цикл по j
                 {
-                    // Используем модифицированную формулу: (1 / sin(j)) + x
+                    // Используем модифицированную формулу: (1 / sin(j)) + 
                     sumSeries += (1 / Math.Sin(j)) + x;
                 }
             }
