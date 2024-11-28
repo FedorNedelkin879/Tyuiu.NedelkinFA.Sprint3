@@ -11,10 +11,10 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task5.V14.Lib
             {
                 for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    sumSeries += Math.Sin(x) + (2.0 / k);
+                    sumSeries += (Math.Sin(x) + (2.0 / k));  
                 }
             }
-            return Math.Round(sumSeries, 3);
+            return Math.Round(sumSeries, 3);  
         }
     }
 }
