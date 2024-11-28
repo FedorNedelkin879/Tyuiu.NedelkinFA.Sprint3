@@ -12,8 +12,8 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task5.V14.Lib
             {
                 for (j = startValue2; j <= stopValue2; j++)  // Внутренний цикл
                 {
-                    // Новая формула: sin(x) + 2/k
-                    sumSeries += Math.Sin(x) + (2.0 / j);  // Вместо 1/sin(j) + x, используем sin(x) + 2/j
+                    // Формула с sin(x) + 2/j
+                    sumSeries += Math.Sin(x) + (2.0 / j);  // Здесь мы используем sin(x) + 2/j
                 }
             }
             return Math.Round(sumSeries, 3);  // Округляем результат
