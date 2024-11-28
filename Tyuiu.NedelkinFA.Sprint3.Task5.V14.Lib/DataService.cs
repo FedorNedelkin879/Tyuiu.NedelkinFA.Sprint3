@@ -8,15 +8,14 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task5.V14.Lib
         {
             double sumSeries = 0;
             int i, j;
-            for (i = startValue1; i <= stopValue1; i++)  // Внешний цикл по i
+            for (i = startValue1; i <= stopValue1; i++)  // Внешний цикл
             {
-                for (j = startValue2; j <= stopValue2; j++)  // Внутренний цикл по j
+                for (j = startValue2; j <= stopValue2; j++)  // Внутренний цикл
                 {
-                    // Используем модифицированную формулу: (1 / sin(j)) + 
-                    sumSeries += (1 / Math.Sin(j)) + x;
+                    sumSeries += (Math.Sin(j) - (1.0 / j) + x);  // Изменяем формулу для корректности
                 }
             }
-            return Math.Round(sumSeries, 3);  // Округляем результат
+            return Math.Round(sumSeries, 3);  // Округляем результат до 3 знаков
         }
     }
 }
