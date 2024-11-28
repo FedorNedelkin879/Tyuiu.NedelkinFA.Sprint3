@@ -7,15 +7,14 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task5.V14.Lib
         public double GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
         {
             double sumSeries = 0;
-            int i, j;
-            for (i = startValue1; i <= stopValue1; i++)  // Внешний цикл по i
+            for (int i = startValue1; i <= stopValue1; i++)
             {
-                for (j = startValue2; j <= stopValue2; j++)  // Внутренний цикл по j
+                for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    sumSeries += Math.Sin(x) + (2.0 / j);  // Формула sin(x) + 2/j
+                    sumSeries += Math.Sin(x) + (2.0 / k);
                 }
             }
-            return Math.Round(sumSeries, 3);  // Округляем результат до 3 знаков
+            return Math.Round(sumSeries, 3);
         }
     }
 }
