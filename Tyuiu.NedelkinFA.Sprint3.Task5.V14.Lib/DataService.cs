@@ -12,7 +12,7 @@ namespace Tyuiu.NedelkinFA.Sprint3.Task5.V14.Lib
             {
                 for (j = startValue2; j <= stopValue2; j++)
                 {
-                    sumSeries = sumSeries + Math.Sin(x) + (2 / (double)j);
+                    sumSeries += (1 / Math.Sin(j)) + x;
                 }
             }
             return Math.Round(sumSeries, 3);
