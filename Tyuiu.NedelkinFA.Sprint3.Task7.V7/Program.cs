@@ -6,7 +6,7 @@ int stopValue = 5;
 Console.WriteLine("start = " + startValue);
 Console.WriteLine("stop = " + stopValue);
 int len = ds.GetMassFunction(startValue, stopValue).Length;
-double[] = valueArray;
+double[] valueArray;
 valueArray = new double[len];
 valueArray = ds.GetMassFunction(startValue, stopValue);
 Console.WriteLine("x      |      f(x)");
